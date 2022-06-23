@@ -13,29 +13,42 @@ export default function Product({ product }) {
   return (
     <Layout>
       <Head>
-        <title>{ product.name }</title>
-        <meta name="description" content={ product.description } />
+        <title>{product.name}</title>
+        <meta name="description" content={product.description} />
       </Head>
 
       <Container>
         <div className={styles.productWrapper}>
-        <div className={styles.productImage}>
-                      <Image
-                        width={product.image.width}
-                        height={product.image.width}
-                        src={product.image.url}
-                        alt={product.name}
-                      />
-                    </div>
+          <div className={styles.productImage}>
+            <Image
+              width={product.image.width}
+              height={product.image.width}
+              src={product.image.url}
+              alt={product.name}
+            />
+          </div>
           <div className={styles.productContent}>
-            <h1>{ product.name }</h1>
-            <div className={styles.productDescription} dangerouslySetInnerHTML={{
-              __html: product.description.html
-            }} />
+            <h1>{product.name}</h1>
+            <div
+              className={styles.productDescription}
+              dangerouslySetInnerHTML={{
+                __html: product.description.html,
+              }}
+            />
 
-            <p className={styles.productPrice}>${ product.price }</p>
+            <p className={styles.productPrice}>${product.price}</p>
             <p className={styles.productBuy}>
-              <Button>Add to Cart</Button>
+              <Button
+                className="snipcart-add-item"
+                data-item-id={product.id}
+                data-item-price={product.price}
+                data-item-url={`/products/${product.slug}`}
+                data-item-description={product.description}
+                data-item-image={product.image.url}
+                data-item-name={product.name}
+              >
+                Add to Cart
+              </Button>
             </p>
           </div>
         </div>
@@ -61,19 +74,20 @@ export async function getStaticProps({ params }) {
           description {
             html
           }
+          slug
         }
       }
     `,
     variables: {
-      slug: params.productSlug
-    }
+      slug: params.productSlug,
+    },
   });
 
   const product = data.data.product;
 
   return {
     props: {
-      product
+      product,
     },
   };
 }
