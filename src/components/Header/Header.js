@@ -34,10 +34,10 @@ const Header = () => {
           </li>
         </ul>
         <p className={styles.headerCart}>
-          <button>
+          <button className="snipcart-checkout">
             <FaShoppingCart />
             <span>
-              ${ cart.subtotal }
+              ${ cart.subtotal?.toFixed(2) }
             </span>
           </button>
         </p>
