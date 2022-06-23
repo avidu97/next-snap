@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
+import Image from "next/image";
 
 import Layout from "@components/Layout";
 import Container from "@components/Container";
@@ -11,8 +12,8 @@ import styles from "@styles/Page.module.scss";
 
 import { ApolloClient, InMemoryCache, gql } from "@apollo/client";
 
-export default function Home({ home }) {
-  console.log('home', home)
+export default function Home({ home, products }) {
+  console.log('products', products);
   const { heroTitle, heroText, heroLink, heroBackground } = home;
   return (
     <Layout>
@@ -45,17 +46,17 @@ export default function Home({ home }) {
         <h2 className={styles.heading}>Featured Gear</h2>
 
         <ul className={styles.products}>
-          {products.slice(0, 4).map((product) => {
+          {products.map((product) => {
             return (
-              <li key={product.id}>
+              <li key={product.slug}>
                 <Link href="#">
                   <a>
                     <div className={styles.productImage}>
-                      <img
-                        width="500"
-                        height="500"
-                        src={product.image}
-                        alt=""
+                      <Image
+                        width={product.image.width}
+                        height={product.image.width}
+                        src={product.image.url}
+                        alt={product.name}
                       />
                     </div>
                     <h3 className={styles.productTitle}>{product.name}</h3>
@@ -96,16 +97,29 @@ export async function getStaticProps() {
             width
           }
         }
+
+        products(first: 4) {
+          name
+          price
+          slug
+          image {
+            url
+            height
+            width
+          }
+        }
       }
     `,
   });
 
   console.log('data', data)
   const home = data.data.page;
+  const products = data.data.products;
 
   return {
     props: {
-      home
+      home,
+      products
     },
   };
 }
