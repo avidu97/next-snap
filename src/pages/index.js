@@ -13,7 +13,6 @@ import styles from "@styles/Page.module.scss";
 import { ApolloClient, InMemoryCache, gql } from "@apollo/client";
 
 export default function Home({ home, products }) {
-  console.log('products', products);
   const { heroTitle, heroText, heroLink, heroBackground } = home;
   return (
     <Layout>
@@ -108,7 +107,7 @@ export async function getStaticProps() {
     `,
   });
 
-  console.log('data', data)
+
   const home = data.data.page;
   const products = data.data.products;
 
