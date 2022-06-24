@@ -17,8 +17,12 @@ export default function Home({ home, products }) {
   return (
     <Layout>
       <Head>
-        <title>Space Jelly Gear</title>
-        <meta name="description" content="Get your Space Jelly gear!" />
+        <title>Custom Designed Tees ♀ OnlyGirls</title>
+        <meta name="description" content="Custom designed Tees for girls, ou can create and order your own design with us" />
+        <meta property="og:title" content="OnlyGirls ♀ Custom Designed Tees"></meta>
+        <meta property="og:description" content="Custom designed Tees for girls, ou can create and order your own design with us"></meta>
+        <meta property="og:url" content="https://onlygirls.store/"></meta>
+<meta property="og:type" content="website"></meta>
       </Head>
 
       <Container>
