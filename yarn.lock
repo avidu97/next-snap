@@ -2394,7 +2394,7 @@
   "resolved" "https://registry.npmjs.org/natural-compare/-/natural-compare-1.4.0.tgz"
   "version" "1.4.0"
 
-"next@>=10.2.0", "next@>=11.0.0", "next@12.0.10":
+"next@>=10.2.0", "next@12.0.10":
   "integrity" "sha512-1y3PpGzpb/EZzz1jgne+JfZXKAVJUjYXwxzrADf/LWN+8yi9o79vMLXpW3mevvCHkEF2sBnIdjzNn16TJrINUw=="
   "resolved" "https://registry.npmjs.org/next/-/next-12.0.10.tgz"
   "version" "12.0.10"
@@ -2416,11 +2416,6 @@
     "@next/swc-win32-arm64-msvc" "12.0.10"
     "@next/swc-win32-ia32-msvc" "12.0.10"
     "@next/swc-win32-x64-msvc" "12.0.10"
-
-"nextjs-google-analytics@^1.2.1":
-  "integrity" "sha512-YrNkTrFRdxrzNRuFuf+3NolXwnM8oU9abri3MQsy9s5xM2BJYS2/nzIBse/o4jeA1EZ7RQVdYdpW75YuPvX+dA=="
-  "resolved" "https://registry.npmjs.org/nextjs-google-analytics/-/nextjs-google-analytics-1.2.1.tgz"
-  "version" "1.2.1"
 
 "node-releases@^2.0.5":
   "integrity" "sha512-U9h1NLROZTq9uE1SNffn6WuPDg8icmi3ns4rEl/oTfIle4iLjTliCzgTsbaIFMq/Xn078/lfY/BL0GWZ+psK4Q=="
@@ -2637,7 +2632,7 @@
   "resolved" "https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz"
   "version" "16.13.1"
 
-"react@*", "react@^16.8.0 || ^17.0.0", "react@^16.8.0 || ^17.0.0 || ^18.0.0", "react@^17.0.2", "react@^17.0.2 || ^18.0.0-0", "react@>= 16.8.0 || 17.x.x || 18.x.x", "react@>=17.0.0", "react@17.0.2":
+"react@*", "react@^16.8.0 || ^17.0.0", "react@^16.8.0 || ^17.0.0 || ^18.0.0", "react@^17.0.2", "react@^17.0.2 || ^18.0.0-0", "react@>= 16.8.0 || 17.x.x || 18.x.x", "react@17.0.2":
   "integrity" "sha512-gnhPt75i/dq/z3/6q/0asP78D0u592D5L1pd7M8P+dck6Fu/jJeL6iVVK23fptSUZj8Vjf++7wXA8UNclGQcbA=="
   "resolved" "https://registry.npmjs.org/react/-/react-17.0.2.tgz"
   "version" "17.0.2"
