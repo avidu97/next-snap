@@ -26,7 +26,7 @@ export default function Home({ home, products }) {
       </Head>
 
       <Container>
-        <h1 className="sr-only">Space Jelly Gear</h1>
+        <h1 className="sr-only">Only Girls</h1>
 
         <div className={styles.hero}>
           <Link href={heroLink}>
