@@ -17,33 +17,165 @@ export default function Home({ home, products }) {
   return (
     <Layout>
       <Head>
-        <title>Custom Designed Tees ♀ OnlyGirls</title>
-        <meta name="description" content="Custom designed Tees for girls, ou can create and order your own design with us" />
-        <meta property="og:title" content="OnlyGirls ♀ Custom Designed Tees"></meta>
-        <meta property="og:description" content="Custom designed Tees for girls, ou can create and order your own design with us"></meta>
+        <title>Buy/ Design Your Own T-Shirt at OnlyGirls Store</title>
+        <meta
+          name="description"
+          content="Custom designed Tees for girls, ou can create and order your own design with us"
+        />
+        <meta
+          property="og:title"
+          content="OnlyGirls ♀ Custom Designed Tees"
+        ></meta>
+        <meta
+          property="og:description"
+          content="Custom designed Tees for girls, ou can create and order your own design with us"
+        ></meta>
         <meta property="og:url" content="https://onlygirls.store/"></meta>
-<meta property="og:type" content="website"></meta>
+        <meta property="og:type" content="website"></meta>
       </Head>
 
       <Container>
         <h1 className="sr-only">Only Girls</h1>
 
         <div className={styles.hero}>
-          <Link href={heroLink}>
-            <a>
-              <div className={styles.heroContent}>
-                <h2>{heroTitle}</h2>
-                <p>{heroText}</p>
+          <h1>BUY/ DESIGN YOUR OWN T-SHIRT</h1>
+        </div>
+        <div className={styles.hero_btn_holder}>
+          <button className={styles.hero_btn}>SHOP</button>
+          <button className={styles.hero_btn}>DESIGN</button>
+        </div>
+
+        <div className={styles.catagory_main}>
+          <div className={styles.catagory_holder}>
+            <div className={styles.catagory}>
+              <Image
+                className={styles.catagory_img}
+                src="https://res.cloudinary.com/avidu/image/upload/v1656007955/test%20image/anomaly-WWesmHEgXDs-unsplash_ufxgpa.jpg"
+                width="100%"
+                height="50%"
+              ></Image>
+              <button className={styles.catagory_btn}>PETS</button>
+            </div>
+            <div className={styles.catagory}>
+              <Image
+                className={styles.catagory_img}
+                src="https://res.cloudinary.com/avidu/image/upload/v1656007955/test%20image/anomaly-WWesmHEgXDs-unsplash_ufxgpa.jpg"
+                width="100%"
+                height="50%"
+              ></Image>
+              <button className={styles.catagory_btn}>GRAPHICS</button>
+            </div>
+            <div className={styles.catagory}>
+              <Image
+                className={styles.catagory_img}
+                src="https://res.cloudinary.com/avidu/image/upload/v1656007955/test%20image/anomaly-WWesmHEgXDs-unsplash_ufxgpa.jpg"
+                width="100%"
+                height="50%"
+              ></Image>
+              <button className={styles.catagory_btn}>EVENTS</button>
+            </div>
+            <div className={styles.catagory}>
+              <Image
+                className={styles.catagory_img}
+                src="https://res.cloudinary.com/avidu/image/upload/v1656007955/test%20image/anomaly-WWesmHEgXDs-unsplash_ufxgpa.jpg"
+                width="100%"
+                height="50%"
+              ></Image>
+              <button className={styles.catagory_btn}>FUNNY</button>
+            </div>
+          </div>
+        </div>
+
+        <div className={styles.idea_main}>
+          <h2>HAVE A IDEA?</h2>
+          <div className={styles.idea_text}>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis
+            eveniet, quo excepturi esse natus in nihil itaque! Laudantium, quos
+            quidem.
+          </div>
+          <button className={styles.idea_btn}>TELL US</button>
+        </div>
+
+        <div className={styles.design_main}>
+          <h2>HAVE A DESIGN?</h2>
+          <div className={styles.design_text}>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis
+            eveniet, quo excepturi esse natus in nihil itaque! Laudantium, quos
+            quidem.
+          </div>
+          <button className={styles.design_btn}>UPLOAD</button>
+        </div>
+
+        <div className={styles.features_main}>
+          <div className={styles.features_holder}>
+            <div className={styles.feature}>
+              <h2>HIGH QUALITY DESIGNS</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+                nesciunt facilis iusto dolore distinctio magni id laboriosam
+                aspernatur dolores amet!
+              </p>
+            </div>
+            <div className={styles.feature}>
+              <h2>COMFORT CLOTHING</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+                nesciunt facilis iusto dolore distinctio magni id laboriosam
+                aspernatur dolores amet!
+              </p>
+            </div>
+            <div className={styles.feature}>
+              <h2>FAST SHIPPING</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+                nesciunt facilis iusto dolore distinctio magni id laboriosam
+                aspernatur dolores amet!
+              </p>
+            </div>
+            <div className={styles.feature}>
+              <h2>CUSTOM DESIGNS</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+                nesciunt facilis iusto dolore distinctio magni id laboriosam
+                aspernatur dolores amet!
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className={styles.faq_main}>
+          <h2>FAQs</h2>
+          <div className={styles.faq_holder}>
+            <div className={styles.faq}>
+              <div className={styles.faq_answer}>How are you doing today?</div>
+              <div className={styles.faq_question}>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima,
+                obcaecati.
               </div>
-              <img
-                className={styles.heroImage}
-                src={heroBackground}
-                alt={heroTitle}
-                width={heroBackground.width}
-                height={heroBackground.height}
-              />
-            </a>
-          </Link>
+            </div>
+            <div className={styles.faq}>
+              <div className={styles.faq_answer}>How are you doing today?</div>
+              <div className={styles.faq_question}>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima,
+                obcaecati.
+              </div>
+            </div>
+            <div className={styles.faq}>
+              <div className={styles.faq_answer}>How are you doing today?</div>
+              <div className={styles.faq_question}>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima,
+                obcaecati.
+              </div>
+            </div>
+            <div className={styles.faq}>
+              <div className={styles.faq_answer}>How are you doing today?</div>
+              <div className={styles.faq_question}>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima,
+                obcaecati.
+              </div>
+            </div>
+          </div>
+          <button className={styles.faq_btn}>MORE FAQs</button>
         </div>
 
         <h2 className={styles.heading}>Featured Gear</h2>

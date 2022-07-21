@@ -4,7 +4,7 @@ const Footer = ({ ...rest }) => {
   return (
     <footer className={styles.footer} {...rest}>
       <p>
-        &copy; <a href="https://spacejelly.dev">OnlyGirls</a>, by <a href="aviis.live">Avidu</a>
+        &copy; <a href="https://aviis.live">OnlyGirls</a>, by <a href="https://aviis.live">Avidu</a>
       </p>
     </footer>
   )
